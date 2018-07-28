@@ -4,12 +4,25 @@
 
 html, body {
 	margin: 0;
+	display: flex;
+}
+
+.flur-bvg, .flur-weather {
+	margin-right: 10px;
+}
+
+.flur-bvg {
+	order: 2;
+}
+
+.flur-weather {
+	order: 1;
 }
 
 .flur-bvg-header {
 	position: absolute;
     top: 0;
-    width: 100%;
+    width: 766px;
 	background-color: white;
 	text-align: center;
 	height: 80px;
@@ -23,7 +36,7 @@ html, body {
 #flur-bvg-iframe {
 	display: block;
 	width: 767px;
-	height: calc(320px + 100vh);
+	height: calc(320px + 620px);
 	overflow: hidden;
-	margin: -345px auto 0 auto;
+	margin: -345px 0 0 0;
 }

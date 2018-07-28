@@ -1,24 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset=utf-8>
-  <title>Flur</title>
-  <link rel="stylesheet" href="style.css"></style>
-  <script src="jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
-</head>
-<body>
-	<div class="flur-bvg-header">
-		<h1 class="flur-bvg-header--headline">Haltestellen Info Firlstraße</h1>
-	</div>
-    <iframe id="flur-bvg-iframe" 
-			allowtransparency="yes" 
-			scrolling="no"
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>Flur</title>
+		<link rel="stylesheet" href="style.css"></style>
+		<script src="jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<!-- BVG -->
+		<div class="flur-bvg">
+			<div class="flur-bvg-header">
+				<h1 class="flur-bvg-header--headline">Haltestellen Info Firlstraße</h1>
+			</div>
+			<iframe id="flur-bvg-iframe" 
+					allowtransparency="yes" 
+					scrolling="no"
+					frameborder="0" 
+					wmode="Opaque"
+					src="https://fahrinfo.bvg.de/Fahrinfo/bin/stboard.bin/dn?ld=&L=&maxJourneys=10&input=+Firlstr.+%28Berlin%29&boardType=depRT&start=1&application=FILTER&showProduct_64=1&showProduct_1=1&showProduct_2=1&showProduct_4=1&showProduct_8=1&showProduct_16=1&selectDate=today&dateBegin=28.07.18&dateEnd=08.12.18&time=now&performTransferSearch=Filtern#stDeparturesTT">
+			</iframe>
+		</div>
+
+		<!-- weather -->
+		<div class="flur-weather">
+			<iframe src="https://www.meteoblue.com/de/wetter/widget/three/obersch%c3%b6neweide_deutschland_2859103?geoloc=fixed&nocurrent=0&noforecast=0&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image"  
 			frameborder="0" 
-			wmode="Opaque"
-			src="https://fahrinfo.bvg.de/Fahrinfo/bin/stboard.bin/dn?ld=&L=&maxJourneys=30&input=+Firlstr.+%28Berlin%29&boardType=depRT&start=1&application=FILTER&showProduct_64=1&showProduct_1=1&showProduct_2=1&showProduct_4=1&showProduct_8=1&showProduct_16=1&selectDate=today&dateBegin=27.07.18&dateEnd=08.12.18&time=21%3A41&performTransferSearch=Filtern#stDeparturesTT">
-	</iframe>
-</body>
+			scrolling="NO" 
+			allowtransparency="true" 
+			sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" 
+			style="width: 460px;height: 594px"></iframe>
+			<div>
+			<!-- DO NOT REMOVE THIS LINK -->
+				<a href="https://www.meteoblue.com/de/wetter/vorhersage/woche/obersch%c3%b6neweide_deutschland_2859103?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank">
+					meteoblue
+				</a>
+			</div>
+		</div>
+	</body>
 </html>
 
 

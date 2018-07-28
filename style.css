@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+} 
+
+html, body {
+	margin: 0;
+}
+
+.flur-bvg-header {
+	position: absolute;
+    top: 0;
+    width: 100%;
+	background-color: white;
+	text-align: center;
+	height: 80px;
+    padding-top: 20px;
+}
+
+.flur-bvg-header--headline {
+	margin: 0;
+}
+
+#flur-bvg-iframe {
+	display: block;
+	width: 767px;
+	height: calc(320px + 100vh);
+	overflow: hidden;
+	margin: -345px auto 0 auto;
+}
